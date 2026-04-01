@@ -25,8 +25,9 @@ app.get('/api/docs/swagger.json', (_req, res) => {
   res.json(swaggerDocument);
 });
 
-// Swagger UI — serve via CDN HTML
+// Swagger UI — serve via CDN HTML (CSP relaxed for this route only)
 app.get('/api/docs', (_req, res) => {
+  res.removeHeader('Content-Security-Policy');
   res.send(`<!DOCTYPE html>
 <html lang="en">
 <head>
