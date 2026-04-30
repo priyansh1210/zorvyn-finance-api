@@ -1,4 +1,4 @@
-# Zorvyn Finance API
+# Finance API
 
 A role-based personal finance tracking REST API built with Express 5, TypeScript, and SQLite. Designed as a backend for a finance dashboard system where users interact with financial records based on their assigned role.
 
